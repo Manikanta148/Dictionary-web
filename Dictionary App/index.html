@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="dictionary.jpeg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Dictionary App</title>
+</head>
+<body>
+    <div class="container">
+        <header>   
+            <button class="history-button"><i class='bx bx-history'></i></button>
+            <h1>Dictionary</h1>
+            <button class="toggling-button"><i class='bx bx-moon toggling'></i></button>
+        </header>
+        <aside>
+            <div class="aside-top">
+                <h1>History</h1>
+                <i class='bx bx-trash trash-button'></i>
+            </div>
+            <ul class="history"></ul>
+        </aside>
+        <main>
+            <input type="text" placeholder="Enter a word" class="input-text">
+            <button class="search">Search</button>
+            <button class="speak">Speak</button>
+        </main>
+        <div class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
