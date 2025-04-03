@@ -81,7 +81,9 @@ function speak(){
         sentence='Meaning;'+meaning;
     }
     let speech = new SpeechSynthesisUtterance(sentence);
-    speech.lang = 'en-US';
+    
+    let voices = speechSynthesis.getVoices();
+    speech.voice = voices.find(voice => voice.lang === "en-US") || voices[0];
     speechSynthesis.speak(speech);
 }
 
